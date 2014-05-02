@@ -41,4 +41,4 @@ Instructions
 *Notes*
 - The Insert Token to Webmap script tool is only designed to get a token and append it service references from one server. The CustomPrint model can be customized to daisy-chain multiple iterations of the Insert Token tool for multiple servers if desired.
 
--The templates folder is included as a reference. You can of course use your own custom templates if desired.
+- The templates folder is included as a reference. You can of course use your own custom templates if desired.
