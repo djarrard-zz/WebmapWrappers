@@ -22,7 +22,7 @@ However, due to a bug, specific layer references in the webmap JSON will not get
 
 This python wrapper has the ability to retrieve a short-lived token for services residing on a specific server, and append that token to the service references in the webmap JSON. Conceptually, this is the same functionality that proxy pages provide applications (hidden service authentication), but specifically for print services.
 
-*Security considerations:*
+**Security considerations:**
 
 1) The username and password to ArcGIS Server are explicitly configured within the python script. If security is a consideration, it will be necessary to take any necessary precautions to prevent the reproduction of the script.
 
