@@ -1,7 +1,7 @@
 Insert Token
 ============
 
-The purpose of this tool is to pre-process webmap JSON service references prior to sending the request to a print task. Within this context, the desire is to append tokens to services residing on a specified server. The documented solution to this scenario is outlined in the following Help Document provided by Esri.
+The purpose of this tool is to pre-process webmap JSON service references prior to sending the request to a print task. Within this context, the desire is to append tokens to services residing on a specified server. The documented solution to this scenario is outlined in the following Help Document provided by Esri. 
 
 Printing maps that contain secured services 
 http://resources.arcgis.com/en/help/main/10.1/index.html#//0154000005q3000000
@@ -9,6 +9,8 @@ http://resources.arcgis.com/en/help/main/10.1/index.html#//0154000005q3000000
 However, due to a bug, specific layer references in the webmap JSON will not get a token.
 
 *[#NIM094431 A custom print service with saved credentials created from the Export Web Map task fails to print individual feature layers from a secured map service. ]*
+
+**Check to make sure the workflow provided by Esri will not work before proceeding**. This sample was designed as a workaround to the bug mentioned above.
 
 Contents
 ----------------------

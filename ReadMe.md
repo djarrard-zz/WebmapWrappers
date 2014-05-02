@@ -9,7 +9,7 @@ Replace Service Paths
 -------------------
 The first scenario is that the Webmap JSON may reference internal services using external paths. This situation rises when someone builds a custom application and configures a print service for that application. In many cases, the print request is sent by the application to a Print Service that resides on the same server that the Map Services and Feature Services in the webmap are served from. But since the paths are public-facing, the Print Service then has to make requests that leave the internal network and then come back in. Along with the sheer inefficiency of these requests, many network configurations may block this kind of traffic. The solution is to use a wrapper that parses the Webmap JSON and, when appropriate, substitutes the public-facing paths with internal ones. This JSON is then sent to the desired print task.
 
-Insert Token (coming soon)
+Insert Token
 -------------------------
 The other scenario involves printing secured services. If the application uses a proxy page, the tokens acquired by the proxy page will not accompany the webmap JSON in the request. Further, if long-lived tokens are stored within the application, these tokens will not be valid when used by the print service. The documented solution to this scenario is outlined in the following Help Document provided by Esri.
 
