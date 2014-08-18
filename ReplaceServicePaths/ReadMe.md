@@ -1,7 +1,7 @@
 REPLACE SERVICE PATHS
 ----------------------
 
-The purpose of this tool is to pre-process webmap JSON service references prior to sending the request to a print task. Within this context, the desire is to switch external path references with internal ones, though any scriptable JSON modification can be made here.
+The purpose of this tool is to pre-process webmap JSON service references prior to sending the request to a print task. Within this context, the desire is to switch external path references with internal ones, though any scriptable JSON modification can be made here. The scenario that inspired this switch is that I have seen multiple occasions where the ArcGIS Server windows user is unable to make outbound network calls to external resources, if the the external IP addresses points to an internal resource.
 
 Contents
 ----------------------
@@ -14,8 +14,6 @@ Contents
 
 **CustomPrint (in Toolbox.tbx)** - Model that combines Replace Service Paths and Export Web Map into a single process. After running, this can be published as a print service.
 
-**Templates folder** - Folder containing the default Map Document templates included in the stock print service provided with ArcGIS Server.
-
 Instructions
 ----------------------
 
@@ -23,9 +21,12 @@ Instructions
 2. In ArcCatalog, browse to ReplaceServicePaths > Toolbox.tbx
 3. Right-click > edit CustomPrint.
 4. Double-click on the Replace Service Paths script tool in the model.
-5. Edit the Path To Replace and Replacement Path variables to match the Find and Replace scenario you wish to execute (e.g. services.mywebsite.com | localhost:6080. Click OK.
+5. Edit the Path To Replace and Replacement Path variables to match the Find and Replace scenario you wish to execute (e.g. "services.mywebsite.com" changes to "localhost:6080". Click OK.
 6. Save the model and close ModelBuilder.
 7. Double-click on the CustomPrint Model to open the dialogue.
 8. Change the Input JSON as appropriate. Click OK.
 9. If it runs successfully, this can be published as a Geoprocessing Service
 
+**Notes**
+
+-  The default templates used by the Export Web Map Task are used. You can elect to use your own templates folder if desired.
