@@ -35,7 +35,7 @@ Instructions
 6.  Save the model and close ModelBuilder.
 7.  Double-click on the CustomPrint Model to open the dialogue.
 8.  Change the Input JSON as appropriate. Click OK.
-9.  Close model builder, double-click on the model, and run it. **NOTE: When running from Desktop, always run with an output type set to PDF. Otherise, Desktop will interpret the output as a raster type which will negatively affect the output type when published to a geoprocessing service.**
+9.  Close model builder, double-click on the model, and run it. **NOTE: When running from Desktop, always run with an output type set to PDF. Otherise, Desktop will interpret the output as a raster type which will negatively affect the output type when published to a geoprocessing service. The other formats can still be executed from the service once it's published.**
 10.  If it runs successfully, this can be published as a Geoprocessing Service
 
 **Notes**
