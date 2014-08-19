@@ -42,4 +42,6 @@ Instructions
 
 -  The Insert Token to Webmap script tool is only designed to get a token and append it service references from one server. The CustomPrint model can be customized to daisy-chain multiple iterations of the Insert Token tool for multiple servers if desired.
 
+-  The tool retrieves the Token URL from ArcGIS Server by sending a request to the REST Info page. This ensures that HTTPS will be used to get the token if it is configured on ArcGIS for Server.   
+
 - The default templates used by the Export Web Map Task are used. You can elect to use your own templates folder if desired.
