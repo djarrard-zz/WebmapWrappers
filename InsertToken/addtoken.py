@@ -65,7 +65,7 @@ if 'baseMap' in jsonObject:
                 protocol = "https://"
             serviceBaseUrl = service['url'].split(protocol)[1]
             arcpy.AddMessage(service['url'])
-            if serviceBaseUrl in serverBaseUrl:
+            if serverBaseUrl in serviceBaseUrl:
                 newURL = service['url'] + "?" + "token=" + token
                 service['url'] = newURL
 
