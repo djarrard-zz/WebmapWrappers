@@ -25,7 +25,7 @@ This python wrapper has the ability to retrieve a short-lived token for services
 
 * The username and password to ArcGIS Server are explicitly configured within the python script. If security is a consideration, it will be necessary to take any necessary precautions to prevent the reproduction of the script.
 
-* As currently configured, the script generates a token with an HTTP request. This means that the username and password are passed to AGS unencrypted and could potentially be intercepted by a third party. When externalizing your services, always authenticate using HTTPS to encrypt the credentials.
+* As currently configured, the script determines the token service URL from the rest/info page. This means that if SSL is not configured on your server, the username and password will be passed to AGS unencrypted and could potentially be intercepted by a third party. When externalizing your services, always authenticate using HTTPS to encrypt the credentials.
 
 ## Instructions
 
